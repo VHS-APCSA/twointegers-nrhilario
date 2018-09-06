@@ -32,8 +32,29 @@ public class TwoIntegers
 	{
 		this.second = second;
 	}
-	public TwoIntegers Arithmetic()
+	public String arithmetic()
 	{
+		int sum = first + second;
+		int diff = first - second;
+		int prod = first * second;
+		double quot = first / second;
 		
+		return "Sum is: " + sum + "Difference is: " + diff + "Product is: " + prod + "Quotient is: " + quot;
+	}
+	
+	public String larger()
+	{
+		if(first > second)
+		{
+			return first + " > " + second;
+		}
+		else if(first > second)
+		{
+			return first + " is not greater than " + second;
+		}
+		else
+		{
+			return first + " = " + second;
+		}
 	}
 }
