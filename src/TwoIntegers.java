@@ -34,27 +34,49 @@ public class TwoIntegers
 	}
 	public String arithmetic()
 	{
-		int sum = first + second;
-		int diff = first - second;
-		int prod = first * second;
-		double quot = first / second;
+		int sum = first + second; //sum of the two numbers
+		int diff = first - second; //difference of the two numbers
+		int prod = first * second; //product of the two numbers
+		double quot = (double) first / second; //quotient of the two numbers
 		
-		return "Sum is: " + sum + "Difference is: " + diff + "Product is: " + prod + "Quotient is: " + quot;
+		return "Sum: " + sum + " Difference: " + diff + " Product: " + prod + " Quotient: " + quot;
 	}
 	
-	public String larger()
+	public String larger() //which integer is larger
 	{
 		if(first > second)
 		{
 			return first + " > " + second;
 		}
-		else if(first > second)
+		else if(first < second)
 		{
 			return first + " is not greater than " + second;
 		}
 		else
 		{
 			return first + " = " + second;
+		}
+	}
+	public boolean isEven() //whether integer is even
+	{
+		if(first + second % 2 == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	public boolean isMultiple() //if first integer is a multiple of the second
+	{
+		if(first % second == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 }
