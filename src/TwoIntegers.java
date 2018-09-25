@@ -39,27 +39,23 @@ public class TwoIntegers
 		int prod = first * second; //product of the two numbers
 		double quot = (double) first / second; //quotient of the two numbers
 		
-		return "Sum: " + sum + " Difference: " + diff + " Product: " + prod + " Quotient: " + quot;
+		return first + " + " + second + " = " + sum + ", " + first + " - " + second + " = " + diff + ", " + first + " * " + second + " = " + prod + ", " + first + " / " + second + " = " + quot;
 	}
 	
-	public String larger() //which integer is larger
+	public int larger() //which integer is larger
 	{
 		if(first > second)
 		{
-			return first + " > " + second;
-		}
-		else if(first < second)
-		{
-			return first + " is not greater than " + second;
+			return first;
 		}
 		else
 		{
-			return first + " = " + second;
+			return second;
 		}
 	}
 	public boolean isEven() //whether integer is even
 	{
-		if(first + second % 2 == 0)
+		if((first + second) % 2 == 0)
 		{
 			return true;
 		}
